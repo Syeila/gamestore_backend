@@ -1,0 +1,45 @@
+GET http://localhost:5000/users
+Authorization: Baarer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJTeWVpbGEgUnV0aGJ5IiwiZW1haWwiOiJzeWVpbGFydXRoQGdtYWlsLmNvbSIsImlhdCI6MTcyNDgwMjgzOSwiZXhwIjoxNzI0ODAyODU0fQ.WsvK2BZ_4pM1uJpG2ZlGEIh30qu6Q-CuE36L2hnftVs
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Syeila Ruthby",
+    "email": "syeilaruth@gmail.com",
+    "password": "12345678",
+    "confPassword": "12345678"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "syeilaruth@gmail.com",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
+
+###
+GET  http://localhost:5000/game
+
+###
+GET  http://localhost:5000/game/edit/8
+
+###
+GET  http://localhost:5000/game/edit/8
+Content-Type: application/json
+{
+    "title": "Free Fire",
+    "price": "30000",
+    "desc": "Free Fire is a free-to-play battle royale game developed and published by Garena for Android and iOS. ",
+    "photo": 
+}
